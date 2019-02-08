@@ -33,3 +33,8 @@ GeneratedPluginRegistrant.java
 build/
 .flutter-plugins
 
+packages/google_maps_flutter/android/.project
+packages/google_maps_flutter/android/.settings/
+packages/google_maps_flutter/example/android/.project
+packages/google_maps_flutter/example/android/.settings/
+                        
