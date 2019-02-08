@@ -43,6 +43,12 @@ class BitmapDescriptor {
     }
   }
 
+  /// Creates a BitmapDescriptor using the name of a bitmap image in the assets
+  /// directory.
+  static BitmapDescriptor fromFile(String filePath) {
+    return BitmapDescriptor._(<dynamic>['fromFile', filePath]);    
+  }
+  
   final dynamic _json;
 
   dynamic _toJson() => _json;
