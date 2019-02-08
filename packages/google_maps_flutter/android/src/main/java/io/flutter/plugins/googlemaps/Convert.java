@@ -38,7 +38,7 @@ class Convert {
               FlutterMain.getLookupKeyForAsset(toString(data.get(1)), toString(data.get(2))));
         }
       case "fromFile":       
-          return BitmapDescriptorFactory.fromFile(toString(data.get(1)));        
+          return BitmapDescriptorFactory.fromPath(toString(data.get(1)));        
       default:
         throw new IllegalArgumentException("Cannot interpret " + o + " as BitmapDescriptor");
     }

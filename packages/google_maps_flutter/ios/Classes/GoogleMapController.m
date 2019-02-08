@@ -439,7 +439,7 @@ static void interpretMarkerOptions(id json, id<FLTGoogleMapMarkerOptionsSink> si
         image = [UIImage imageNamed:[registrar lookupKeyForAsset:iconData[1]
                                                      fromPackage:iconData[2]]];
       }
-    } else if ([iconData[0] isEqualToString:@"fromFile"]) {
+    } else if ([iconData[0] isEqualToString:@"fromPath"]) {
       image = [UIImage imageWithContentsOfFile:iconData[1]];      
     }
     [sink setIcon:image];
